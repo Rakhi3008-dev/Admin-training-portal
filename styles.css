@@ -1,0 +1,93 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  transition: background 0.3s, color 0.3s;
+}
+.light {
+  background: #fff;
+  color: #000;
+}
+.dark {
+  background: #121212;
+  color: #f4f4f4;
+}
+.navbar {
+  background: #222;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav-links a {
+  margin: 0 1rem;
+  color: white;
+  text-decoration: none;
+}
+.hamburger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .hamburger {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+  }
+}
+.chat-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 1rem;
+}
+.chat-box {
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: #f0f0f0;
+}
+.msg.user .bubble {
+  text-align: right;
+  background: #007bff;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.msg.bot .bubble {
+  text-align: left;
+  background: #eee;
+  padding: 0.5rem;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.chat-input {
+  display: flex;
+  gap: 0.5rem;
+}
+.low {
+  color: red;
+}
+.high {
+  color: green;
+}
+.query-card {
+  border: 1px solid #eee;
+  margin: 1rem 0;
+  padding: 1rem;
+}
+.text-red {
+  color: red;
+}
+.text-green {
+  color: green;
+}
